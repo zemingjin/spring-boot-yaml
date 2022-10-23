@@ -1,0 +1,47 @@
+buildscript {
+    dependencies {
+        classpath 'org.owasp:dependency-check-gradle:5.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
+    }
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'java'
+    id 'maven-publish'
+    id 'java-library'
+    id 'org.springframework.boot' version '2.7.5'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group 'org.zeming'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-tomcat'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.1'
+    testImplementation 'com.github.kstyrc:embedded-redis:0.6'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.spockframework:spock-core:2.3-groovy-4.0'
+    testImplementation 'org.spockframework:spock-spring:2.3-groovy-4.0'
+}
+
+test {
+    useJUnitPlatform()
+}
