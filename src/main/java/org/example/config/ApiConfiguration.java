@@ -2,12 +2,12 @@ package org.example.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.Map;
 
 @Data
-@Component
+@Configuration
 @ConfigurationProperties("usaa.ent.apis")
 public class ApiConfiguration {
     private String apiKey;

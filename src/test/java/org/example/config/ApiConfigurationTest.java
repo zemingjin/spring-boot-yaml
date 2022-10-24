@@ -29,6 +29,7 @@ class ApiConfigurationTest {
 
     @Test
     public void testApiMap_determination() {
+        assertNotNull(apiConfiguration.getApiKey());
         assertNotNull(apiConfiguration.getApiMap());
         ApiConfiguration.Api api = apiConfiguration.getApiMap().get(DETERMINATION_API);
         assertNotNull(api);
@@ -40,6 +41,7 @@ class ApiConfigurationTest {
 
     @Test
     public void testApiMap_idClaim() {
+        assertNotNull(apiConfiguration.getApiKey());
         assertNotNull(apiConfiguration.getApiMap());
         ApiConfiguration.Api api = apiConfiguration.getApiMap().get(ID_CLAIM_API);
         assertNotNull(api);
@@ -51,6 +53,7 @@ class ApiConfigurationTest {
 
     @Test
     public void testApiMap_memberSearch() {
+        assertNotNull(apiConfiguration.getApiKey());
         assertNotNull(apiConfiguration.getApiMap());
         ApiConfiguration.Api api = apiConfiguration.getApiMap().get(MEMBER_SEARCH_API);
         assertNotNull(api);
@@ -62,6 +65,7 @@ class ApiConfigurationTest {
 
     @Test
     public void testApiMap_pctc() {
+        assertNotNull(apiConfiguration.getApiKey());
         assertNotNull(apiConfiguration.getApiMap());
         ApiConfiguration.Api api = apiConfiguration.getApiMap().get(POTENTIAL_CUSTOMER_API);
         assertNotNull(api);
