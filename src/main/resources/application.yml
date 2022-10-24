@@ -1,6 +1,7 @@
 usaa:
   ent:
     apis:
+      apiKey: abcefg
       apiMap:
         DETERMINATION_API:
           domain: abc.com
