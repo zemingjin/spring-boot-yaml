@@ -1,0 +1,23 @@
+usaa:
+  ent:
+    apis:
+      apiMap:
+        DETERMINATION_API:
+          domain: abc.com
+          uri: /determination/api
+          conjur: /mock/conjur/determination/url
+          glooEnvCookie: mock_determination
+        ID_CLAIM_API:
+          domain: security.com
+          uri: /idclaim/api
+        MEMBER_SEARCH_API:
+          domain: abc.com
+          uri: /members/api
+          conjur: /mock/conjur/member/url
+          glooEnvCookie: mock_member
+        POTENTIAL_CUSTOMER_API:
+          domain: abc.com
+          uri: /pctc/api
+          conjur: /mock/conjur/pctc/url
+          glooEnvCookie: mock_pctc
+
