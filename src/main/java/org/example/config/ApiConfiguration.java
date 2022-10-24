@@ -10,6 +10,7 @@ import java.util.Map;
 @Component
 @ConfigurationProperties("usaa.ent.apis")
 public class ApiConfiguration {
+    private String apiKey;
     private Map<ApiName, Api> apiMap;
 
     @Data
